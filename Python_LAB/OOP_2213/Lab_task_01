@@ -1,0 +1,12 @@
+def extra_char(str1, str2):
+    extra_char =""
+
+    for j in str2:
+
+        if j not in str1:
+            extra_char += j
+
+    return extra_char
+str1 = input("Enter the first string: ")
+str2 = input("Enter the second string: ")
+print(extra_char(str1,str2))
